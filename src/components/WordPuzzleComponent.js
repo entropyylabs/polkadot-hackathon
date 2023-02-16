@@ -271,7 +271,7 @@ export const WordPuzzleComponent = (props) => {
 
   return (
     <div className="root">
-      <table onMouseLeave={() => setIsSelecting(false)}>
+      <table>
         <tbody>
           {data.map((i, row) => {
             return (
@@ -279,14 +279,8 @@ export const WordPuzzleComponent = (props) => {
                 {i.map((j, column) => {
                   return (
                     <td
-                      onMouseLeave={() => setHover()}
-                      onMouseEnter={() => {
-                        addLetterToSelectedWords(j);
-                        setHover(j);
-                      }}
-                      onMouseDown={() => {
-                        addFirstLetter(j);
-                        setIsSelecting(true);
+                      onClick={() => {
+                        setSelectedLetters([...selectedLetters, j]);
                       }}
                       onMouseUp={() => setIsSelecting(false)}
                       className="letter-wrapper"
