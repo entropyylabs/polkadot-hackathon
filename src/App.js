@@ -6,6 +6,7 @@ import Signup from "./pages/SignUp";
 import Home from "./pages/Home";
 import Protected from "./components/Protected";
 import Celebration from "./pages/Celebration";
+import Word from "./pages/Word";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           }
         />
         <Route path="/celebration" element={<Celebration />} />
+        <Route path="/word" element={<Word />} />
       </Routes>
     </div>
   );
