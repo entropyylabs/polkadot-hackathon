@@ -15,14 +15,11 @@ export const Word = () => {
   ];
 
   const matrix = [
-    ["p", "g", "i", "t", "h", "u", "b", "t", "e"],
-    ["r", "s", "n", "p", "m", "e", "r", "e", "c"],
-    ["o", "g", "m", "n", "o", "x", "q", "r", "i"],
-    ["j", "g", "u", "r", "k", "a", "n", "e", "m"],
-    ["e", "i", "v", "w", "x", "m", "e", "a", "s"],
-    ["c", "t", "m", "n", "o", "p", "v", "c", "t"],
-    ["t", "2", "r", "s", "t", "l", "b", "t", "a"],
-    ["y", "b", "e", "k", "c", "e", "l", "2", "r"],
+    ["p", "g", "i", "t", "h", "u", "b"],
+    ["p", "g", "i", "t", "h", "u", "b"],
+    ["p", "g", "i", "t", "h", "u", "b"],
+    ["p", "g", "i", "t", "h", "u", "b"],
+    ["p", "g", "i", "t", "h", "u", "b"],
   ];
   const [found, setFound] = useState([]);
   const [isSelecting, setIsSelecting] = useState(false);
@@ -87,7 +84,7 @@ export const Word = () => {
     <div>
       <div style={{ display: "flex", justifyContent: "center", marginTop: 5 }}>
         <h2>Ways:</h2>
-        {pathNames.map((element) => {
+        {/* {pathNames.map((element) => {
           return (
             <span
               style={{
@@ -109,10 +106,10 @@ export const Word = () => {
               </h2>
             </span>
           );
-        })}
+        })} */}
       </div>
       <div style={{ display: "flex", justifyContent: "center" }}>
-        {answerWords.map((element) => {
+        {/* {answerWords.map((element) => {
           return (
             <span
               style={{
@@ -133,7 +130,7 @@ export const Word = () => {
               </h2>
             </span>
           );
-        })}
+        })} */}
       </div>
       <WordPuzzleComponent
         design={{
@@ -143,7 +140,7 @@ export const Word = () => {
           backgroundColor: "rgb(1, 146, 98)",
           fontFamily: "monospace",
           fontWeight: "",
-          fontSize: "2.5rem",
+          fontSize: "1.5rem",
           markedForeColor: "white",
           selectedForeColor: "rgb(1, 146, 98)",
           hoveredForeColor: "white",
