@@ -24,7 +24,7 @@ function Signup() {
     <div>
       <div className="p-4 m-4 border">
         <h2 className="mb-3">Sign up!</h2>
-        {error && { error }}
+        {error && error}
         <form onSubmit={handleSignup}>
           <input
             type="email"
