@@ -82,56 +82,6 @@ export const Word = () => {
 
   return (
     <div>
-      <div style={{ display: "flex", justifyContent: "center", marginTop: 5 }}>
-        <h2>Ways:</h2>
-        {/* {pathNames.map((element) => {
-          return (
-            <span
-              style={{
-                cursor: "pointer",
-                marginLeft: 20,
-                marginRight: 20,
-                color: "black",
-              }}
-            >
-              <h2
-                onClick={() => addOrRemovePath(element)}
-                style={{
-                  textDecoration: !isInList(element, paths)
-                    ? "line-through"
-                    : "none",
-                }}
-              >
-                {element}
-              </h2>
-            </span>
-          );
-        })} */}
-      </div>
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        {/* {answerWords.map((element) => {
-          return (
-            <span
-              style={{
-                marginTop: 15,
-                marginLeft: 20,
-                marginRight: 20,
-                color: "black",
-              }}
-            >
-              <h2
-                style={{
-                  textDecoration: isInList(element, found)
-                    ? "line-through"
-                    : "none",
-                }}
-              >
-                {element}
-              </h2>
-            </span>
-          );
-        })} */}
-      </div>
       <WordPuzzleComponent
         design={{
           markedBackgroundColor: "#00C3FF",

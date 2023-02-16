@@ -1,22 +1,31 @@
 import { firestore } from "./firebase";
+import { makeAccount } from "../services/createAccount";
 import { collection, setDoc, doc } from "firebase/firestore";
 
 export const createUserDocument = async (user) => {
   if (!user) return;
 
-  const userRef = collection(firestore, "Users");
-  const snapshot = doc(firestore, "Users", user.uid);
+  let account;
+  makeAccount().then((account) => {
+    account = account;
 
-  if (!snapshot.exists) {
-    const { email } = user;
+    const userRef = collection(firestore, "Users");
+    const snapshot = doc(firestore, "Users", user.uid);
 
-    try {
-      setDoc(doc(firestore, "Users", user.uid), {
-        email,
-        createdAt: new Date(),
-      });
-    } catch (error) {
-      console.log("Error :: creating user", error);
+    if (!snapshot.exists) {
+      const { email } = user;
+
+      try {
+        setDoc(doc(firestore, "Users", user.uid), {
+          email,
+          createdAt: new Date(),
+          account: account,
+        });
+      } catch (error) {
+        console.log("Error :: creating user", error);
+      }
     }
-  }
+  });
+
+  console.log(account, ": this is account");
 };

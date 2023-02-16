@@ -15,14 +15,23 @@ function createSdk(account) {
 }
 
 // Entrypoint
-async function main() {
+// async function main() {
+//   const signer = await KeyringProvider.fromMnemonic(mnemonic);
+//   const address = signer.instance.address;
+
+//   const sdk = createSdk(signer);
+
+//   const collection = await createCollection(sdk, address);
+//   console.log("Сollection was create. ID: ", collection);
+// }
+
+// main();
+
+export const createSDK = async () => {
   const signer = await KeyringProvider.fromMnemonic(mnemonic);
   const address = signer.instance.address;
 
   const sdk = createSdk(signer);
 
-  const collection = await createCollection(sdk, address);
-  console.log("Сollection was create. ID: ", collection);
-}
-
-main();
+  return sdk;
+};

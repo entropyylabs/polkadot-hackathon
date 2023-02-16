@@ -281,6 +281,9 @@ export const WordPuzzleComponent = (props) => {
                     <td
                       onClick={() => {
                         setSelectedLetters([...selectedLetters, j]);
+                        [...selectedLetters, j].length == 6
+                          ? console.log("match")
+                          : console.log("no match");
                       }}
                       onMouseUp={() => setIsSelecting(false)}
                       className="letter-wrapper"
