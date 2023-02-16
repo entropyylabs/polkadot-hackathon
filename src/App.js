@@ -5,6 +5,7 @@ import Login from "./pages/Login";
 import Signup from "./pages/SignUp";
 import Home from "./pages/Home";
 import Protected from "./components/Protected";
+import Celebration from "./pages/Celebration";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             </Protected>
           }
         />
+        <Route path="/celebration" element={<Celebration />} />
       </Routes>
     </div>
   );
