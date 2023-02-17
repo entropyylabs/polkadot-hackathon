@@ -1,7 +1,18 @@
+import React, { useState, useEffect } from "react";
 import { Input } from "@chakra-ui/react";
 import GeoGuesser from "../components/GeoGuesser";
+import { useNavigate } from "react-router-dom";
 
 const Geoguesser = () => {
+  const [answer, setAnswer] = useState("");
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (answer === "Paris") {
+      setTimeout(() => {
+        navigate("/geoguesser2");
+      }, 1000);
+    }
+  }, [answer]);
   return (
     <div className="relative bg-white w-full h-[665px] overflow-hidden text-left text-sm text-black font-work-sans">
       <div className="absolute top-[140px] left-[32px] w-[325px] h-[330px]">
@@ -18,6 +29,7 @@ const Geoguesser = () => {
         size="md"
         placeholder="Answer"
         w="348px"
+        onChange={(e) => setAnswer(e.target.value)}
       />
       <div className="absolute top-[46px] left-[21px] w-[313px] h-[58px]">
         <p className="m-0 absolute top-[12px] left-[0px] tracking-[0.2px] leading-[32px] flex items-center w-[61px] h-3.5">
