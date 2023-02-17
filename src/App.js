@@ -3,7 +3,6 @@ import { Routes, Route } from "react-router-dom";
 import useWindowDimensions from "./utils/useWindowDimensions";
 import Login from "./pages/Login";
 import Signup from "./pages/SignUp";
-import Home from "./pages/Home";
 import Protected from "./components/Protected";
 import Celebration from "./pages/Celebration";
 import Clue2 from "./pages/WordPuzzle";
@@ -37,17 +36,94 @@ function App() {
               </Protected>
             }
           />
-          <Route path="/celebration" element={<Celebration />} />
-          <Route path="/clue" element={<Clue2 height={height} />} />
-          <Route path="/geoguesser" element={<Geoguesser />} />
-          <Route path="/geoguesser2" element={<Geoguesser2 />} />
-          <Route path="/cam" element={<Cam />} />
-          <Route path="/hunts" element={<Hunts1 />} />
-          <Route path="/hunt" element={<Hunt />} />
-          <Route path="/passport" element={<Passport />} />
-          <Route path="/passportview" element={<PassportView />} />
-          <Route path="/sell" element={<Sell />} />
-          <Route path="/bid" element={<Bid />} />
+          <Route
+            path="/celebration"
+            element={
+              <Protected>
+                <Celebration />
+              </Protected>
+            }
+          />
+          <Route
+            path="/clue"
+            element={
+              <Protected>
+                <Clue2 />
+              </Protected>
+            }
+          />
+          <Route
+            path="/geoguesser"
+            element={
+              <Protected>
+                <Geoguesser />
+              </Protected>
+            }
+          />
+          <Route
+            path="/geoguesser2"
+            element={
+              <Protected>
+                <Geoguesser2 />
+              </Protected>
+            }
+          />
+          <Route
+            path="/cam"
+            element={
+              <Protected>
+                <Cam />
+              </Protected>
+            }
+          />
+          <Route
+            path="/hunts"
+            element={
+              <Protected>
+                <Hunts1 />
+              </Protected>
+            }
+          />
+          <Route
+            path="/hunt"
+            element={
+              <Protected>
+                <Hunt />
+              </Protected>
+            }
+          />
+          <Route
+            path="/passport"
+            element={
+              <Protected>
+                <Passport />
+              </Protected>
+            }
+          />
+          <Route
+            path="/passportview"
+            element={
+              <Protected>
+                <PassportView />
+              </Protected>
+            }
+          />
+          <Route
+            path="/sell"
+            element={
+              <Protected>
+                <Sell />
+              </Protected>
+            }
+          />
+          <Route
+            path="/bid"
+            element={
+              <Protected>
+                <Bid />
+              </Protected>
+            }
+          />
           <Route path="/splashscreen" element={<SplashScreen />} />
         </Routes>
       </div>
