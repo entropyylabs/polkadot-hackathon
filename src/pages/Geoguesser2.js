@@ -1,4 +1,5 @@
 import { Input } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 import GeoGuesser from "../components/GeoGuesser";
 
 const Geoguesser2 = () => {
@@ -30,8 +31,9 @@ const Geoguesser2 = () => {
       <button className="cursor-pointer [border:none] p-0 bg-[#262626] absolute top-[544px] left-[102px] rounded-lg w-[186px] h-[46px]">
         <div className="absolute top-[15px] left-[35px] w-[118px] h-4">
           <div className="absolute top-[0px] left-[19px] text-sm tracking-[0.6px] leading-[16px] text-white text-center">
-            <span className="font-work-sans">Grab it now</span>
-            <span className="font-medium font-work-sans">{` `}</span>
+            <Link to="/cam">
+              <span className="font-work-sans">Grab it now</span>
+            </Link>
           </div>
           <img
             className="absolute top-[1px] left-[0px] w-[13px] h-3.5 overflow-hidden"
