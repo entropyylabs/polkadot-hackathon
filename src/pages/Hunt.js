@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Hunt = () => {
   return (
@@ -64,7 +65,7 @@ const Hunt = () => {
       </div>
       <button className="cursor-pointer [border:none] p-0 bg-gray-100 absolute top-[607px] left-[21px] rounded-lg w-[348px] h-[46px]">
         <div className="absolute top-[15px] text-lg tracking-[0.6px] leading-[16px] font-medium font-work-sans text-white text-center w-full text-center text-[16px]">
-          Let’s play
+          <Link to="/clue">Let’s play</Link>
         </div>
       </button>
       <img

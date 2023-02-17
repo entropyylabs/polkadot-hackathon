@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const Hunts1 = () => {
   return (
     <div>
@@ -89,7 +90,7 @@ const Hunts1 = () => {
         />
         <button className="cursor-pointer [border:none] p-0 bg-gray-100 absolute top-[414px] left-[19px] rounded-lg w-[352px] h-12">
           <div className="absolute top-[16px] text-center text-[16px] w-full text-lg tracking-[0.6px] leading-[16px] font-medium font-work-sans text-white text-left">
-            Start the hunt
+            <Link to="/hunt">Start the hunt</Link>
           </div>
         </button>
       </main>

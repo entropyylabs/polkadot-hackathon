@@ -34,7 +34,7 @@ function App() {
             }
           />
           <Route path="/celebration" element={<Celebration />} />
-          <Route path="/clue2" element={<Clue2 height={height} />} />
+          <Route path="/clue" element={<Clue2 height={height} />} />
           <Route path="/geoguesser" element={<Geoguesser />} />
           <Route path="/geoguesser2" element={<Geoguesser2 />} />
           <Route path="/cam" element={<Cam />} />
