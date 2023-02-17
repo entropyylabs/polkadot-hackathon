@@ -63,7 +63,7 @@ function Signup() {
             </div>
           </div>
           <button className="absolute top-[480px] left-[21px] rounded-lg bg-mediumblue w-[348px] h-[46px] text-center text-white">
-            <div className="absolute top-[15px] w-100 text-center tracking-[0.6px] leading-[16px] font-medium w-full text-center">
+            <div className="absolute top-[15px] w-100 text-center tracking-[0.6px] leading-[16px] font-medium w-full text-center text-[16px]">
               Sign me up
             </div>
           </button>
