@@ -1,4 +1,5 @@
 import React from "react";
+import HamMenu from "../components/Menu";
 
 const Bid = () => {
   return (
@@ -45,11 +46,7 @@ const Bid = () => {
         alt=""
         src="../back-icon.svg"
       />
-      <img
-        className="absolute top-[14px] left-[349px] w-5 h-5"
-        alt=""
-        src="../menu.svg"
-      />
+      <HamMenu />
       <div className="absolute top-[558px] left-[21px] rounded-lg bg-mediumblue w-[348px] h-12 text-center text-xl text-white">
         <div className="absolute top-[15px] left-[0px] text-[16px] tracking-[0.6px] leading-[16px] font-medium w-full text-center">
           Place a bid

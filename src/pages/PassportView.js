@@ -2,6 +2,7 @@ import { Switch } from "@chakra-ui/react";
 import React, { useState } from "react";
 import { FlippingPages } from "flipping-pages";
 import "flipping-pages/dist/style.css";
+import HamMenu from "../components/Menu";
 
 const PassportView = () => {
   const [selected, setSelected] = useState(0);
@@ -192,11 +193,7 @@ const PassportView = () => {
         alt=""
         src="../back-icon3.svg"
       />
-      <img
-        className="absolute top-[14px] left-[349px] w-5 h-5"
-        alt=""
-        src="../menu.svg"
-      />
+      <HamMenu />
       <img
         className="absolute top-[593px] left-[177px] w-9 h-9"
         alt=""
