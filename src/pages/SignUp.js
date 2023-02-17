@@ -32,7 +32,7 @@ function Signup() {
         <img
           className="absolute top-[36px] left-[21px] w-[104px] h-[114.4px]"
           alt=""
-          src="../logo.svg"
+          src="../stamps-logo.svg"
         />
         <form onSubmit={handleSignup}>
           <div className="absolute top-[252px] left-[21px] w-[348px] h-[70px]">
