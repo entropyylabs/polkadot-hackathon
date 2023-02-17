@@ -27,7 +27,7 @@ const Hunt = () => {
           <div className="absolute top-[53px] left-[0px] text-[16px] tracking-[0.2px] leading-[20px] flex items-center w-[222px] h-[41px]">
             Solve the clues to win free goodies at your loved spot
           </div>
-          <div className="absolute top-[102px] left-[0px] text-base tracking-[0.2px] leading-[24px] text-gray-200 flex items-center w-[207px] h-[26px] text-[12px]">
+          <div className="absolute top-[102px] left-[0px]  tracking-[0.2px] leading-[24px] text-gray-200 flex items-center w-[207px] h-[26px] text-[12px]">
             Location : Disneyland Park, Paris
           </div>
         </div>
@@ -35,11 +35,11 @@ const Hunt = () => {
           <b className="absolute top-[0px] left-[263px] tracking-[0.2px] leading-[16px] flex items-center w-[39px] h-6 text-[24px]">
             1/5
           </b>
-          <div className="absolute top-[0px] left-[0px] text-base tracking-[0.2px] leading-[24px] text-gray-200 flex items-center w-[207px] h-[26px] text-[12px]">
+          <div className="absolute top-[0px] left-[0px] tracking-[0.2px] leading-[24px] text-gray-200 flex items-center w-[207px] h-[26px] text-[12px]">
             Floor price : 100 Euros
           </div>
         </div>
-        <div className="absolute top-[363px] left-[23px] w-[302px] h-[133px] text-base text-gray-200">
+        <div className="absolute top-[363px] left-[23px] w-[302px] h-[133px] text-gray-200">
           <div className="absolute top-[67px] left-[45px] tracking-[0.2px] leading-[14px] flex items-center w-[81px] h-[45px] text-[12px]">
             Free Mickey merch at the Merch Store
           </div>
@@ -64,7 +64,7 @@ const Hunt = () => {
         </div>
       </div>
       <button className="cursor-pointer [border:none] p-0 bg-gray-100 absolute top-[607px] left-[21px] rounded-lg w-[348px] h-[46px]">
-        <div className="absolute top-[15px] text-lg tracking-[0.6px] leading-[16px] font-medium font-work-sans text-white text-center w-full text-center text-[16px]">
+        <div className="absolute top-[15px] tracking-[0.6px] leading-[16px] font-medium font-work-sans text-white text-center w-full text-center text-[16px]">
           <Link to="/clue">Let’s play</Link>
         </div>
       </button>
