@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@chakra-ui/react": "^2.5.1",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@mui/material": "^5.11.9",
@@ -14,6 +15,7 @@
     "@unique-nft/sdk": "^0.2.5",
     "antd": "^5.2.1",
     "firebase": "^9.17.1",
+    "framer-motion": "^9.0.4",
     "react": "^18.2.0",
     "react-camera-pro": "^1.2.1",
     "react-confetti": "^6.1.0",
