@@ -5,7 +5,7 @@ const Cameraview = () => {
   const camera = useRef(null);
   return (
     <div>
-      <Camera ref={camera} facingMode="environment" />
+      <Camera ref={camera} facingMode="environment" style={{ zIndex: 0 }} />
     </div>
   );
 };

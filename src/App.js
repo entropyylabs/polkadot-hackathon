@@ -11,6 +11,7 @@ import Clue2 from "./pages/WordPuzzle";
 import Geoguesser from "./pages/Geoguesser";
 import Geoguesser2 from "./pages/Geoguesser2";
 import Cam from "./pages/Cam";
+import Hunts1 from "./pages/Hunts";
 
 function App() {
   const { height, width } = useWindowDimensions();
@@ -36,6 +37,7 @@ function App() {
           <Route path="/geoguesser" element={<Geoguesser />} />
           <Route path="/geoguesser2" element={<Geoguesser2 />} />
           <Route path="/cam" element={<Cam />} />
+          <Route path="/hunts" element={<Hunts1 />} />
         </Routes>
       </div>
     );
