@@ -9,6 +9,7 @@ module.exports = {
         orangered: "#f24e1e",
         black: "#000",
         goldenrod: "#ffc022",
+        mediumblue: "#3a00e5",
       },
       fontFamily: { "work-sans": "'Work Sans'" },
     },
