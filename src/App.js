@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Protected from "./components/Protected";
 import Celebration from "./pages/Celebration";
 import Word from "./pages/Word";
+import Clue2 from "./pages/Clue2";
 
 function App() {
   const { height, width } = useWindowDimensions();
@@ -30,6 +31,7 @@ function App() {
           />
           <Route path="/celebration" element={<Celebration />} />
           <Route path="/word" element={<Word />} />
+          <Route path="/clue2" element={<Clue2 height={height} />} />
         </Routes>
       </div>
     );

@@ -27,22 +27,7 @@ export const WordPuzzleComponent = (props) => {
     setMarkedLetters,
   } = props.options;
 
-  /*const matrix = [
-    ["a", "b", "c", "d", "e", "d", "e", "d", "e"],
-    ["a", "s", "h", "i", "j", "t", "e", "d", "c"],
-    ["a", "g", "m", "n", "o", "r", "e", "d", "i"],
-    ["s", "g", "u", "r", "k", "a", "n", "d", "m"],
-    ["k", "i", "v", "w", "x", "k", "e", "d", "b"],
-    ["i", "k", "m", "n", "o", "y", "e", "d", "o"],
-    ["k", "q", "r", "s", "t", "a", "e", "d", "m"],
-    ["y", "u", "e", "m", "e", "n", "e", "d", "e"],
-  ];*/
-
-  //const answerWords = ["gurkan", "trakya", "deneme", "ask", "cimbom"];
   const [data, setData] = useState([]);
-  // const [isSelecting, setIsSelecting] = useState(false);
-  // const [selectedLetters, setSelectedLetters] = useState([]);
-  // const [markedLetters, setMarkedLetters] = useState([]);
   const [path, setPath] = useState();
   const [hover, setHover] = useState();
 
@@ -64,16 +49,10 @@ export const WordPuzzleComponent = (props) => {
     } else {
       const selectedWord = selectedLetters.map((x) => x.letter).join("");
       const result = isAnswer(selectedLetters);
-      //console.log(selectedWord);
-      //console.log("is answer : ", result);
       setPath();
       setSelectedLetters([]);
     }
   }, [isSelecting]);
-
-  // useEffect(() => {
-  //   console.log("marked letters:", markedLetters);
-  // }, [markedLetters]);
 
   const addLetterToSelectedWords = (letter) => {
     if (isSelecting) {
@@ -302,6 +281,7 @@ export const WordPuzzleComponent = (props) => {
                         style={{
                           fontFamily: "monospace", //fontFamily,
                           fontSize: fontSize,
+                          marginTop: "15px",
                           color:
                             isMarked(j) === true
                               ? markedForeColor

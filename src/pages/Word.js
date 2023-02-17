@@ -2,17 +2,7 @@ import React, { useState, useEffect } from "react";
 import { WordPuzzleComponent } from "../components/WordPuzzleComponent";
 
 export const Word = () => {
-  const answerWords = [
-    "gurkan",
-    "example",
-    "project",
-    "github",
-    "npm",
-    "b2t",
-    "r2l",
-    "star",
-    "react",
-  ];
+  const answerWords = ["github"];
 
   const matrix = [
     ["p", "g", "i", "t", "h", "u", "b"],
@@ -31,9 +21,7 @@ export const Word = () => {
 
   useEffect(() => {
     if (isSelecting) {
-      console.log("selected");
     } else {
-      console.log("released");
       const selectedWord = selectedLetters.map((x) => x.letter).join("");
       console.log(selectedWord);
       addToFound(selectedWord);
@@ -64,7 +52,6 @@ export const Word = () => {
   };
 
   const addOrRemovePath = (param) => {
-    // console.log(param);
     if (!isInList(param, paths)) {
       setPaths([...paths, param]);
     } else {
@@ -72,13 +59,9 @@ export const Word = () => {
     }
   };
 
-  useEffect(() => {
-    console.log("available paths:", paths);
-  }, [paths]);
+  useEffect(() => {}, [paths]);
 
-  useEffect(() => {
-    console.log("marked letters:", markedLetters);
-  }, [markedLetters]);
+  useEffect(() => {}, [markedLetters]);
 
   return (
     <div>
@@ -87,12 +70,12 @@ export const Word = () => {
           markedBackgroundColor: "#00C3FF",
           selectedBackgroundColor: "white",
           hoveredBackgroundColor: "rgb(0, 218, 145)",
-          backgroundColor: "rgb(1, 146, 98)",
+          backgroundColor: "rgb(38, 38, 38)",
           fontFamily: "monospace",
           fontWeight: "",
           fontSize: "1.5rem",
           markedForeColor: "white",
-          selectedForeColor: "rgb(1, 146, 98)",
+          selectedForeColor: "rgb(38, 38, 38)",
           hoveredForeColor: "white",
           foreColor: "white",
         }}

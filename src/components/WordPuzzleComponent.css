@@ -12,16 +12,11 @@
   user-select: none;
 }
 
-/* p {
-    -webkit-user-select: text;
-    -khtml-user-select: text;
-    -moz-user-select: text;
-    -o-user-select: text;
-    user-select: text;
-} */
-
 .letter-wrapper {
   /* background: rgb(1, 146, 98); */
+  width: 46px;
+  height: 66px;
+
   padding: 5px;
   display: inline-block;
   padding-top: 5px;
@@ -41,6 +36,6 @@
 table,
 tr,
 td {
-  border: 1px inset rgb(255, 255, 255);
+  border: 1px inset #262626;
   border-collapse: collapse;
 }

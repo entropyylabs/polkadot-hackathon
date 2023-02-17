@@ -1,9 +1,10 @@
 import React from "react";
+import GeoGuesser from "../components/GeoGuesser";
 
 const Landing = () => {
   return (
-    <div>
-      <h1>Landing</h1>
+    <div className="bg-black">
+      <GeoGuesser />
     </div>
   );
 };
