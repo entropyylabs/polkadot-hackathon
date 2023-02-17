@@ -47,7 +47,7 @@ const Clue2 = ({ height }) => {
         </div>
       ) : (
         <Progress
-          className="absolute top-[646px] left-[21px]"
+          className="absolute top-[600px] left-[21px]"
           style={{ width: 348 }}
           type="line"
           percent={counter}
