@@ -9,6 +9,10 @@ const Hunts1 = () => {
             alt=""
             src="../screenshot-20230216-at-1212-1@2x.png"
           />
+          <div className="absolute top-[36px] left-[0px] bg-goldenrod w-[390px] h-[52px]" />
+          <div className="absolute text-[32px] top-[37px] left-[27px] tracking-[0.2px] leading-[32px] flex items-center w-[168px] h-[49px]">
+            EXPLORE..
+          </div>
         </div>
         <div className="absolute top-[256px] left-[19px] w-[352px] h-[206px]">
           <div className="absolute top-[0px] left-[0px] w-[352px] h-44">
