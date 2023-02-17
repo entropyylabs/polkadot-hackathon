@@ -13,6 +13,7 @@ import Cam from "./pages/Cam";
 import Hunts1 from "./pages/Hunts";
 import Hunt from "./pages/Hunt";
 import Passport from "./pages/Passport";
+import PassportView from "./pages/PassportView";
 
 function App() {
   const { height, width } = useWindowDimensions();
@@ -41,6 +42,7 @@ function App() {
           <Route path="/hunts" element={<Hunts1 />} />
           <Route path="/hunt" element={<Hunt />} />
           <Route path="/passport" element={<Passport />} />
+          <Route path="/passportview" element={<PassportView />} />
         </Routes>
       </div>
     );
