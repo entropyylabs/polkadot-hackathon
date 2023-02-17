@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Sell = () => {
   return (
@@ -31,7 +32,7 @@ const Sell = () => {
       </div>
       <button className="cursor-pointer [border:none] p-0 bg-mediumblue absolute top-[629px] left-[20px] rounded-lg w-[348px] h-12">
         <div className="absolute top-[15px] left-[124px] text-xl tracking-[0.6px] leading-[16px] font-medium font-work-sans text-white text-center">
-          Place a bid
+          <Link to="/bid">Place a bid</Link>
         </div>
       </button>
       <div className="absolute top-[704px] left-[21px] w-[348px] h-[264px]">
