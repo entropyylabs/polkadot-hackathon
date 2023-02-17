@@ -7,7 +7,7 @@ const Geoguesser = () => {
   const [answer, setAnswer] = useState("");
   const navigate = useNavigate();
   useEffect(() => {
-    if (answer === "Paris") {
+    if (answer === "Fantasyland") {
       setTimeout(() => {
         navigate("/geoguesser2");
       }, 1000);
