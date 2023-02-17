@@ -7,8 +7,9 @@ import Signup from "./pages/SignUp";
 import Home from "./pages/Home";
 import Protected from "./components/Protected";
 import Celebration from "./pages/Celebration";
-import Word from "./pages/Word";
-import Clue2 from "./pages/Clue2";
+import Clue2 from "./pages/WordPuzzle";
+import Geoguesser from "./pages/Geoguesser";
+import Geoguesser2 from "./pages/Geoguesser2";
 
 function App() {
   const { height, width } = useWindowDimensions();
@@ -30,8 +31,9 @@ function App() {
             }
           />
           <Route path="/celebration" element={<Celebration />} />
-          <Route path="/word" element={<Word />} />
           <Route path="/clue2" element={<Clue2 height={height} />} />
+          <Route path="/geoguesser" element={<Geoguesser />} />
+          <Route path="/geoguesser2" element={<Geoguesser2 />} />
         </Routes>
       </div>
     );

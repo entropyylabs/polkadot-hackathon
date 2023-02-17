@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "antd/dist/reset.css";
-import Word from "./Word";
-import { Icon, IconButton } from "@mui/material";
+import Word from "../components/Word";
 import { Progress } from "antd";
 const Clue2 = ({ height }) => {
   const [counter, setCounter] = useState(100);
@@ -36,13 +35,6 @@ const Clue2 = ({ height }) => {
           showInfo={false}
         />
       )}
-
-      <IconButton
-        className="absolute top-[75px] left-[41px] [transform:_rotate(-180deg)] [transform-origin:0_0]"
-        color="primary"
-      >
-        <Icon>arrow_forward_sharp</Icon>
-      </IconButton>
     </div>
   );
 };

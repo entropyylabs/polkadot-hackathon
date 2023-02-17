@@ -2,11 +2,7 @@ import React from "react";
 import ReactStreetview from "react-streetview";
 
 const GeoGuesser = () => {
-  // const googleMapsApiKey = "AIzaSyC9TTEQVKFDvpZkwwqqOOWQu7SD1rLbE7Q";
-
   const googleMapsApiKey = process.env.REACT_APP_MAPS_KEY;
-
-  console.log(googleMapsApiKey);
 
   // see https://developers.google.com/maps/documentation/javascript/3.exp/reference#StreetViewPanoramaOptions
   const streetViewPanoramaOptions = {
@@ -17,9 +13,11 @@ const GeoGuesser = () => {
   return (
     <div
       style={{
-        width: "390px",
-        height: "840px",
+        width: "325px",
+        height: "330px",
         backgroundColor: "#eeeeee",
+        border: "2px solid #262626",
+        borderRadius: "8px",
       }}
     >
       <ReactStreetview
