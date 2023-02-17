@@ -68,7 +68,7 @@ const PassportView = () => {
                 </div>
               </div>
               <img
-                className="absolute top-[15px] left-[93px] w-[162.73px] h-[179px]"
+                className="animate-pulse absolute top-[15px] left-[93px] w-[162.73px] h-[179px]"
                 alt=""
                 src="../disneystamp.svg"
               />
@@ -88,7 +88,7 @@ const PassportView = () => {
                 </b>
               </div>
               <img
-                className="absolute top-[15px] left-[93px] w-[162.73px] h-[179px]"
+                className="animate-pulse absolute top-[15px] left-[93px] w-[162.73px] h-[179px]"
                 alt=""
                 src="../teslastamp.svg"
               />
@@ -172,7 +172,7 @@ const PassportView = () => {
                 />
               </div>
               <img
-                className="absolute top-[15px] left-[93px] w-[162.73px] h-[179px]"
+                className="animate-pulse absolute top-[15px] left-[93px] w-[162.73px] h-[179px]"
                 alt=""
                 src="../hmstamp.svg"
               />

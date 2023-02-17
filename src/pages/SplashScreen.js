@@ -16,7 +16,7 @@ const SplashScreen = () => {
   return (
     <div className="relative bg-white w-full h-[665px] overflow-hidden text-left text-4xl text-gray-100 font-work-sans">
       <img
-        className="absolute top-[182px] left-[93px] w-[203px] h-[229.31px]"
+        className="animate-bounce absolute top-[182px] left-[93px] w-[203px] h-[229.31px]"
         alt=""
         src="../stamps-logo.svg"
       />

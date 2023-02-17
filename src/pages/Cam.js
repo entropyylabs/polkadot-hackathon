@@ -20,7 +20,7 @@ const Cam = () => {
         <Link to="/celebration">
           {showImage && (
             <img
-              className="fixed top-[250px] left-[100px] h-[202px] w-[207px]"
+              className="animate-spin fixed top-[250px] left-[100px] h-[202px] w-[207px]"
               alt=""
               src="../mickey.png"
             />
