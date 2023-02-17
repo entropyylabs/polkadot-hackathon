@@ -23,11 +23,13 @@ const Geoguesser2 = () => {
           SEEMS LIKE THE STAMP IS AROUND YOU!
         </p>
       </div>
-      <img
-        className="absolute top-[14px] left-[21px] w-5 h-5"
-        alt=""
-        src="../back-icon.svg"
-      />
+      <Link to="/hunt">
+        <img
+          className="absolute top-[14px] left-[21px] w-5 h-5"
+          alt=""
+          src="../back-icon.svg"
+        />
+      </Link>
       <button className="cursor-pointer [border:none] p-0 bg-[#262626] absolute top-[544px] left-[102px] rounded-lg w-[186px] h-[46px]">
         <div className="absolute top-[15px] left-[35px] w-[118px] h-4">
           <div className="absolute top-[0px] left-[19px] text-sm tracking-[0.6px] leading-[16px] text-white text-center">

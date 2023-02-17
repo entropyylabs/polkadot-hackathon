@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Input } from "@chakra-ui/react";
 import GeoGuesser from "../components/GeoGuesser";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Geoguesser = () => {
   const [answer, setAnswer] = useState("");
@@ -44,11 +44,13 @@ const Geoguesser = () => {
           Maybe your stamp is located here?
         </p>
       </div>
-      <img
-        className="absolute top-[14px] left-[21px] w-5 h-5"
-        alt=""
-        src="../back-icon.svg"
-      />
+      <Link to="/hunt">
+        <img
+          className="absolute top-[14px] left-[21px] w-5 h-5"
+          alt=""
+          src="../back-icon.svg"
+        />
+      </Link>
     </div>
   );
 };

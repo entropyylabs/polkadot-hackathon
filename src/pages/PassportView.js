@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { FlippingPages } from "flipping-pages";
 import "flipping-pages/dist/style.css";
 import HamMenu from "../components/Menu";
+import { Link } from "react-router-dom";
 
 const PassportView = () => {
   const [selected, setSelected] = useState(0);
@@ -188,11 +189,13 @@ const PassportView = () => {
         colorScheme="teal"
         defaultChecked={false}
       />
-      <img
-        className="absolute top-[14px] left-[21px] w-5 h-5"
-        alt=""
-        src="../back-icon3.svg"
-      />
+      <Link to="/passport">
+        <img
+          className="absolute top-[14px] left-[21px] w-5 h-5"
+          alt=""
+          src="../back-icon.svg"
+        />
+      </Link>
       <HamMenu />
       <img
         className="absolute top-[593px] left-[177px] w-9 h-9"

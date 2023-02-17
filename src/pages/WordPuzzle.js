@@ -56,6 +56,13 @@ const Clue2 = ({ height }) => {
           showInfo={false}
         />
       )}
+      <Link to="/hunt">
+        <img
+          className="absolute top-[14px] left-[21px] w-5 h-5"
+          alt=""
+          src="../back-icon.svg"
+        />
+      </Link>
     </div>
   );
 };
