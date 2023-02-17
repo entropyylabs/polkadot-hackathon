@@ -15,7 +15,7 @@ function Signup() {
     setError("");
     try {
       await signUp(email, password);
-      navigate("/login");
+      navigate("/signup");
     } catch (err) {
       setError(err.message);
     }
