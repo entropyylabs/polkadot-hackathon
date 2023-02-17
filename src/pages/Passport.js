@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import HamMenu from "../components/Menu";
 
 const Passport = () => {
   return (
@@ -17,11 +18,7 @@ const Passport = () => {
         />
       </Link>
 
-      <img
-        className="absolute top-[14px] left-[349px] w-5 h-5"
-        alt=""
-        src="../menu.svg"
-      />
+      <HamMenu />
     </div>
   );
 };
