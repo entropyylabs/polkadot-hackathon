@@ -6,7 +6,7 @@ const SplashScreen = () => {
 
   useEffect(() => {
     const timeout = setTimeout(() => {
-      navigate("/login");
+      navigate("/home");
     }, 5000);
 
     return () => {
