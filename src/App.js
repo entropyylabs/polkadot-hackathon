@@ -26,14 +26,14 @@ function App() {
     return (
       <div className="App">
         <Routes>
-          <Route path="/" element={<Hunts1 />} />
+          <Route path="/" element={<SplashScreen />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route
             path="/home"
             element={
               <Protected>
-                <Home />
+                <Hunts1 />
               </Protected>
             }
           />
