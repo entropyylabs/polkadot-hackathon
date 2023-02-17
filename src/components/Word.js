@@ -5,11 +5,11 @@ export const Word = () => {
   const answerWords = ["github"];
 
   const matrix = [
-    ["p", "g", "i", "t", "h", "u", "b"],
-    ["p", "g", "i", "t", "h", "u", "b"],
-    ["p", "g", "i", "t", "h", "u", "b"],
-    ["p", "g", "i", "t", "h", "u", "b"],
-    ["p", "g", "i", "t", "h", "u", "b"],
+    ["P", "D", "O", "N", "A", "U", "T"],
+    ["Z", "L", "U", "T", "T", "J", "L"],
+    ["V", "G", "U", "P", "H", "D", "G"],
+    ["L", "G", "I", "T", "L", "G", "R"],
+    ["P", "X", "S", "K", "O", "Y", "U"],
   ];
   const [found, setFound] = useState([]);
   const [isSelecting, setIsSelecting] = useState(false);
