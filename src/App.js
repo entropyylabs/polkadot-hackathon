@@ -12,6 +12,7 @@ import Geoguesser from "./pages/Geoguesser";
 import Geoguesser2 from "./pages/Geoguesser2";
 import Cam from "./pages/Cam";
 import Hunts1 from "./pages/Hunts";
+import Hunt from "./pages/Hunt";
 
 function App() {
   const { height, width } = useWindowDimensions();
@@ -38,6 +39,7 @@ function App() {
           <Route path="/geoguesser2" element={<Geoguesser2 />} />
           <Route path="/cam" element={<Cam />} />
           <Route path="/hunts" element={<Hunts1 />} />
+          <Route path="/hunt" element={<Hunt />} />
         </Routes>
       </div>
     );
