@@ -19,11 +19,11 @@ const Clue2 = ({ height }) => {
       <div className="absolute top-[168px] left-[32px]  h-[442px] object-cover">
         <Word />
       </div>
-      <p className="m-0 absolute top-[83px] left-[21px] tracking-[0.2px] leading-[32px] flex items-center w-[61px] h-3.5">
+      <p className="m-0 absolute text-[16px] top-[83px] left-[21px] tracking-[0.2px] leading-[32px] flex items-center w-[61px] h-3.5">
         CLUE 1
       </p>
-      <p className="m-0 absolute top-[103px] left-[21px] text-base tracking-[0.2px] leading-[24px] flex items-center w-[313px] h-[41px]">
-        Find the blah blah of the blah blah of the blah blah
+      <p className="m-0 absolute text-[24px] top-[113px] left-[21px] text-base tracking-[0.2px] leading-[24px] flex items-center w-[313px] h-[41px]">
+        Who is Mickey Mouse’s bestfriend?
       </p>
       {done ? (
         <div className="absolute top-[556px] left-[34px] w-[322px] h-[50px] text-center text-2xl text-gray-100">

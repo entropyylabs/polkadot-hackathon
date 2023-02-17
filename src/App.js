@@ -16,6 +16,7 @@ import Passport from "./pages/Passport";
 import PassportView from "./pages/PassportView";
 import Sell from "./pages/Sell";
 import Bid from "./pages/Bid";
+import SplashScreen from "./pages/SplashScreen";
 
 function App() {
   const { height, width } = useWindowDimensions();
@@ -47,6 +48,7 @@ function App() {
           <Route path="/passportview" element={<PassportView />} />
           <Route path="/sell" element={<Sell />} />
           <Route path="/bid" element={<Bid />} />
+          <Route path="/splashscreen" element={<SplashScreen />} />
         </Routes>
       </div>
     );
